@@ -1,0 +1,111 @@
+header {
+  margin: 0 auto;
+  background-color: aquamarine;
+  height: 200px;
+  padding-top: 50px;
+}
+
+header h1,
+header h2 {
+  color: white;
+  padding-left: 20%;
+}
+
+button {
+  width: 140px;
+}
+
+.buttons,
+p {
+  padding-left: 20%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  row-gap: 20px;
+}
+
+.card-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  padding: 10px;
+}
+
+.card {
+  box-shadow: 5px 5px 10px;
+  width: 250px;
+}
+
+.card p {
+  margin: 0px;
+  padding: 0px;
+}
+.img img {
+  width: 100%;
+}
+.price {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card-footer {
+  padding: 10px;
+}
+
+.primary-btn {
+  background-color: aquamarine;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.secondary-btn {
+  background-color: white;
+  border: 1px solid grey;
+  color: black;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.active-btn {
+  color: aquamarine;
+  border-color: aquamarine;
+}
+
+@media screen and (min-width: 700px) {
+  .card-wrapper {
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    row-gap: 20px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
